@@ -7,7 +7,8 @@ class Menu extends HTMLElement {
 				<ul>
 					<li><a href="/">Home</a></li>
 					<li><a href="fetch.html">Fetch</a></li>
-					<li><a href="fetch.html">Fetch HTML</a></li>
+					<li><a href="fetch.html">Fetch</a></li>
+					<li><a href="dispatch.html">Dispatch</a></li>
 				</ul>
 			</nav>
    `
