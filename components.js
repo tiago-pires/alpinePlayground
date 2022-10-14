@@ -10,6 +10,7 @@ class Menu extends HTMLElement {
 					<li><a href="fetch.html">Fetch</a></li>
 					<li><a href="dispatch.html">Dispatch</a></li>
 					<li><a href="dispatch-with-data.html">Dispatch with Data</a></li>
+					<li><a href="dispatch-method.html">Dispatch method</a></li>
 				</ul>
 			</nav>
    `
