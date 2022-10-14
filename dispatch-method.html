@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+	<body>
+    <div x-data="baz()">
+      <button @click="dispatch">Dispatch Data</button>
+    </div>
+    <div
+      x-data="{text: ''}"
+      @my-event.window="text = $event.detail.foo"
+      x-text="text"
+    ></div>
+    <script>
+      window.baz = function () {
+        return {
+          dispatch() {
+            window.dispatchEvent(
+              new CustomEvent('my-event', { detail: { foo: 'bar!' } })
+            )
+          },
+        }
+      }
+    </script>
+  </body>
+</html>

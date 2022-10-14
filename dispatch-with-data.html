@@ -1,0 +1,11 @@
+<html>
+	<head>
+		<script src="//unpkg.com/alpinejs" defer></script>
+	</head>
+	<body>
+		<div x-data>
+			<button @click="$dispatch('my-event', {foo: 'bar'})">Dispatch Data</button>
+		</div>
+		<div x-data="{text: ''}" @my-event.window="text = $event.detail.foo" x-text="text"></div>
+	</body>
+</html>
