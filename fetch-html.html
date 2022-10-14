@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<script src="//unpkg.com/alpinejs" defer></script>
+	</head>
+	<body>
+	<div 
+		x-data="{items: ''}" 
+		x-init="items = await (await fetch('./partial.html')).text()" 
+		x-html="items">
+	</div>
+	</body>
+</html>
